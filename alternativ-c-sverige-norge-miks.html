@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternativ C — Sverige-twist · Sommerferie 2026</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+  <!-- TITTEL -->
+  <section class="title-slide" data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Astrid_Lindgrens_V%C3%A4rld_-_Entr%C3%A9.jpg/1280px-Astrid_Lindgrens_V%C3%A4rld_-_Entr%C3%A9.jpg" data-background-opacity="0.35">
+    <h1>Alternativ C</h1>
+    <h2>Sverige-twist</h2>
+    <p class="subtitle">Liseberg · Astrid Lindgrens Värld · norsk natur</p>
+    <div class="price-tag">~38 500 kr · 14 dager · 4 reisende</div>
+    <p style="margin-top:30px; font-size:0.9em; color:#444">
+      27. juli – 9. august 2026<br>
+      <a href="index.html" style="color:#1e3a5f">← Tilbake til oversikt</a>
+    </p>
+  </section>
+
+  <!-- KART -->
+  <section class="map-slide">
+    <h2 style="margin-bottom:10px">🗺️ Hele ruten</h2>
+    <p style="font-size:0.7em; margin:5px 0">Klikk på markørene for dag-info · scroll for å zoome (etter klikk i kartet)</p>
+    <div id="routemap"></div>
+  </section>
+
+  <!-- DAGS-SLIDES -->
+  <section id="day-slides-anchor"></section>
+
+  <!-- BUDSJETT -->
+  <section>
+    <h2>💰 Budsjett — estimat</h2>
+    <table class="budget-table">
+      <tr><td>Overnatting (13 netter á 750 kr — SE billigere)</td><td>9 750 kr</td></tr>
+      <tr><td>Mat — matlaging selv 70% (SE billigere mat)</td><td>9 800 kr</td></tr>
+      <tr><td>Restaurant (4 × 1 000 kr)</td><td>4 000 kr</td></tr>
+      <tr><td>Bensin + bompenger (Svinesund gratis!)</td><td>6 500 kr</td></tr>
+      <tr><td>Liseberg (familie 4, online-pris)</td><td>3 000 kr</td></tr>
+      <tr><td>Astrid Lindgrens Värld (familie)</td><td>2 500 kr</td></tr>
+      <tr><td>Dyreparken (familie)</td><td>1 500 kr</td></tr>
+      <tr><td>Flåmsbana (familie)</td><td>1 200 kr</td></tr>
+      <tr><td>Bø Sommarland (familie)</td><td>1 800 kr</td></tr>
+      <tr><td>Vitenfabrikken Sandnes</td><td>400 kr</td></tr>
+      <tr><td>Buffer / uforutsett</td><td>1 500 kr</td></tr>
+      <tr class="total"><td>TOTAL</td><td>41 950 kr ⚠</td></tr>
+    </table>
+    <p style="font-size:0.6em; margin-top:15px; color:#666">
+      ⚠ Over budsjett. <strong>Spare-tips:</strong> Skip Bø Sommarland (–1 800), kutt 1 restaurant (–1 000),
+      bytt 2 hytter mot telt-camping (–800). Justert: <strong>~38 350 kr</strong>.
+    </p>
+  </section>
+
+  <!-- FORDELER / ULEMPER -->
+  <section>
+    <h2>📊 Pros & Cons</h2>
+    <div class="pros-cons">
+      <div class="col pros">
+        <h3>✅ Fordeler</h3>
+        <ul>
+          <li>3 fornøyelsesparker — barnas drøm</li>
+          <li>Astrid Lindgrens Värld er magisk 5-8 år</li>
+          <li>Liseberg er Skandinavias beste familie-park</li>
+          <li>Sverige er 20-30% billigere på mat</li>
+          <li>Svinesund-brua er gratis siden 2021</li>
+          <li>Variasjon: park-uke + natur-uke</li>
+          <li>Begge land i én tur</li>
+        </ul>
+      </div>
+      <div class="col cons">
+        <h3>⚠ Ulemper</h3>
+        <ul>
+          <li>Over budsjett uten kutt</li>
+          <li>Hjem-stopp dag 6 er logistisk rart</li>
+          <li>Vimmerby er langt øst — mye kjøring</li>
+          <li>Mindre tid på norsk natur (10 vs 14 dg)</li>
+          <li>Tre fornøyelsesparker = mer kø/stress</li>
+          <li>Ingen Bergen / Geiranger</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH-NEXUS -->
+  <section data-background-color="#003d99">
+    <h2 style="color:white">🧪 Tech / retro-bonus</h2>
+    <div style="text-align:left; max-width:900px; margin:0 auto; color:white; font-size:0.8em">
+      <h3 style="color:#ffb84d">På denne ruten:</h3>
+      <ul style="line-height:1.6">
+        <li><strong>Universeum Gøteborg (dag 1-2):</strong> Skandinavias største vitensenter! Akvarier, regnskog, fysikk-leker. Perfekt tech + barneglede.</li>
+        <li><strong>Vitenfabrikken Sandnes (dag 8):</strong> Interaktivt vitensenter — passer hele familien.</li>
+      </ul>
+      <h3 style="color:#ffb84d; margin-top:25px">Hvis dere strekker dere (1-1,5t omvei):</h3>
+      <ul style="line-height:1.6">
+        <li><strong>IT-ceum / Datamuseet Linköping (dag 4-5):</strong> Sveriges datahistorie 1950→2000-tallet. Forventet detour: 1,5t hver vei fra Vimmerby. Veldig spesialisert, kanskje litt mye for små barn — vurder solo-tur mens kona tar barna på Vimmerby igjen.</li>
+      </ul>
+      <h3 style="color:#ffb84d; margin-top:25px">Drøm-detour (krever ekstra dag):</h3>
+      <ul style="line-height:1.6">
+        <li><strong>Tekniska Museet Stockholm:</strong> "Play Beyond Play"-utstilling — Pac-Man, Donkey Kong, C64, NES, Sega. Stockholms Spelmuseum integrert. Avstand fra Vimmerby: 3,5t. Ikke realistisk uten å forlenge turen.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OVERNATTING -->
+  <section>
+    <h2>🏨 Overnatting</h2>
+    <table class="budget-table" style="font-size:0.55em">
+      <tr><td><strong>Dag 1-2</strong></td><td>Lisebergsbyn Camping eller Lerum Hotel</td></tr>
+      <tr><td><strong>Dag 3-4</strong></td><td>Vimmerby Camping eller Astrid Lindgrens Hotell</td></tr>
+      <tr><td><strong>Dag 5</strong></td><td>Vätterleden Camping Jönköping</td></tr>
+      <tr><td><strong>Dag 6</strong></td><td>Hjem (Tvedestrand) 🏡</td></tr>
+      <tr><td><strong>Dag 7</strong></td><td>Roligheden Camping Kristiansand</td></tr>
+      <tr><td><strong>Dag 8</strong></td><td>Sandnes Camping</td></tr>
+      <tr><td><strong>Dag 9</strong></td><td>Røldal Hyttegrend</td></tr>
+      <tr><td><strong>Dag 10-11</strong></td><td>Lofthus Camping Hardanger (2 netter)</td></tr>
+      <tr><td><strong>Dag 12</strong></td><td>Flåm Camping &amp; Youth Hostel</td></tr>
+      <tr><td><strong>Dag 13</strong></td><td>Bø Camping</td></tr>
+      <tr><td><strong>Dag 14</strong></td><td>Hjem 🏡</td></tr>
+    </table>
+  </section>
+
+  <!-- LISEBERG-TIPS -->
+  <section>
+    <h2>🎢 Liseberg-tips</h2>
+    <div style="text-align:left; max-width:900px; margin:0 auto; font-size:0.7em">
+      <ul>
+        <li><strong>Kjøp billett online</strong> — sparer kø og kroner.</li>
+        <li><strong>"Kaninlandet"</strong> er perfekt for 5-åringen. <strong>"Barnens Paradis"</strong> har ride for 5-8 år.</li>
+        <li><strong>8-åringen</strong> kan ta de fleste mellomstore ridene, ev. de små berg-og-dalbanene.</li>
+        <li><strong>Helldag (10-22)</strong> er nok. Kveldsstemningen med lys og show er spesielt magisk.</li>
+        <li><strong>Mat inne i parken er dyrt</strong> — pakk niste, finn picknic-områder.</li>
+        <li><strong>Lisebergsbyn Camping</strong> er 5 min gange fra parken — booket lenge før.</li>
+      </ul>
+
+      <h3 style="color:#d97706; margin-top:25px">Astrid Lindgrens Värld-tips</h3>
+      <ul>
+        <li><strong>Visning av teaterstykker</strong> er hovedattraksjon — Pippi, Emil, Mio min Mio. Sjekk programmet på forhånd.</li>
+        <li><strong>Hele parken</strong> kan utforskes på dagsbasis. Ingen ride i tradisjonell forstand — det er rollelek og opplevelser.</li>
+        <li><strong>Repris</strong>: Mange tar 2 dager fordi første dag er kaos å orientere seg. Med 1 dag, planlegg show-tider i forveien.</li>
+        <li><strong>Lindgren-bøker</strong> i kofferten — gjennomles én før dere kommer. Magisk gjenkjennelse for barna.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PAKKELISTE -->
+  <section>
+    <h2>🎒 Pakkeliste-tips</h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; text-align:left; font-size:0.7em">
+      <div>
+        <h3 style="color:#d97706">For fornøyelsesparkene</h3>
+        <ul style="list-style:none; padding:0">
+          <li>👟 Slitesterke sko (mye gåing)</li>
+          <li>🌂 Paraply (kan regne i SE også)</li>
+          <li>💧 Vannflasker (fyll på)</li>
+          <li>🍱 Picknicboks for mat-sparing</li>
+          <li>📱 Powerbank (lange dager)</li>
+          <li>🎫 Skriv ut billetter</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:#d97706">For den norske naturen</h3>
+        <ul style="list-style:none; padding:0">
+          <li>☔ Regntøy (helt nødvendig)</li>
+          <li>🥾 Tursko</li>
+          <li>🩲 Badetøy</li>
+          <li>🎒 Sekk for dagsturer</li>
+          <li>🛏️ Sengetøy (ofte ikke inkludert)</li>
+          <li>🛒 Mat-handling i SE før retur</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVSLUTNING -->
+  <section data-background-color="#003d99">
+    <h1 style="color:white">God tur! 🇸🇪🇳🇴</h1>
+    <p style="color:white; font-size:1.2em">Alternativ C — Sverige-twist</p>
+    <p style="color:white; opacity:0.8">
+      <a href="index.html" style="color:#ffb84d">← Tilbake til oversikt</a>
+    </p>
+  </section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/routes.js"></script>
+<script src="assets/map.js"></script>
+
+<script>
+const DAY_IMAGES_C = {
+  1: "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_2503_stitch_%2828573994096%29.jpg/1280px-G%C3%B6teborg_2503_stitch_%2828573994096%29.jpg",
+  2: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Lisebergsportal_kv%C3%A4ll.jpg/1280px-Lisebergsportal_kv%C3%A4ll.jpg",
+  3: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Vimmerby%2C_den_23_juni_2008%2C_bild_19.jpg/1280px-Vimmerby%2C_den_23_juni_2008%2C_bild_19.jpg",
+  4: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Astrid_Lindgrens_V%C3%A4rld_-_Entr%C3%A9.jpg/1280px-Astrid_Lindgrens_V%C3%A4rld_-_Entr%C3%A9.jpg",
+  5: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Kollagej%C3%B6nk%C3%B6ping.jpg/1280px-Kollagej%C3%B6nk%C3%B6ping.jpg",
+  6: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg/1280px-Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg",
+  7: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Swimming_Tigers.jpg/1280px-Swimming_Tigers.jpg",
+  8: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Vitenfabrikken%2C_Sandnes.JPG/1280px-Vitenfabrikken%2C_Sandnes.JPG",
+  9: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/R%C3%B8ldal.jpg/1280px-R%C3%B8ldal.jpg",
+  10: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Odda-Hardangerfjord.jpg/1280px-Odda-Hardangerfjord.jpg",
+  11: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Steinsdalsfossen.jpg/1280px-Steinsdalsfossen.jpg",
+  12: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Fl%C3%A5msbana.jpg/1280px-Fl%C3%A5msbana.jpg",
+  13: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/B%C3%B8_Sommarland_-_Splash.JPG/1280px-B%C3%B8_Sommarland_-_Splash.JPG",
+  14: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg/1280px-Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg"
+};
+const FALLBACK_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/G%C3%B6teborg_2503_stitch_%2828573994096%29.jpg/1280px-G%C3%B6teborg_2503_stitch_%2828573994096%29.jpg";
+
+const route = ROUTES.C;
+const anchor = document.getElementById('day-slides-anchor');
+const parent = anchor.parentElement;
+
+route.days.forEach(d => {
+  const img = DAY_IMAGES_C[d.day] || FALLBACK_IMG;
+  const slide = document.createElement('section');
+  slide.innerHTML = `
+    <div class="day-slide">
+      <div class="day-img" style="background-image:url('${img}')"></div>
+      <div class="day-info">
+        <span class="date-chip">DAG ${d.day} · ${d.date}</span>
+        <h2>${d.place}</h2>
+        <h3>${d.activity}</h3>
+        <div class="meta-row">
+          <div class="meta">🚗 <strong>Kjøretid:</strong> ${d.drive}</div>
+          <div class="meta">🏕️ <strong>Overnatting:</strong> ${d.lodging}</div>
+        </div>
+      </div>
+    </div>
+  `;
+  parent.insertBefore(slide, anchor);
+});
+anchor.remove();
+
+Reveal.initialize({
+  hash: true,
+  controls: true,
+  progress: true,
+  center: true,
+  transition: 'slide',
+  width: 1280,
+  height: 760
+});
+
+Reveal.on('slidechanged', e => {
+  if (e.currentSlide.classList.contains('map-slide') && !window._mapInited) {
+    window._mapInited = true;
+    setTimeout(() => renderRouteMap('routemap', 'C'), 100);
+  }
+});
+
+setTimeout(() => {
+  const cur = Reveal.getCurrentSlide();
+  if (cur && cur.classList.contains('map-slide') && !window._mapInited) {
+    window._mapInited = true;
+    renderRouteMap('routemap', 'C');
+  }
+}, 500);
+</script>
+
+</body>
+</html>

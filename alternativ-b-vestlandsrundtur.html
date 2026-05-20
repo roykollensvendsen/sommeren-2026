@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternativ B — Klassisk Vestlandsrundtur · Sommerferie 2026</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+  <!-- TITTEL -->
+  <section class="title-slide" data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Geirangerfjord_.jpg/1280px-Geirangerfjord_.jpg" data-background-opacity="0.35">
+    <h1>Alternativ B</h1>
+    <h2>Klassisk Vestlandsrundtur</h2>
+    <p class="subtitle">Stavanger · Bergen · Sognefjord · Geiranger · Trollstigen</p>
+    <div class="price-tag">~37 000 kr · 14 dager · 4 reisende</div>
+    <p style="margin-top:30px; font-size:0.9em; color:#444">
+      27. juli – 9. august 2026<br>
+      <a href="index.html" style="color:#1e3a5f">← Tilbake til oversikt</a>
+    </p>
+  </section>
+
+  <!-- KART -->
+  <section class="map-slide">
+    <h2 style="margin-bottom:10px">🗺️ Hele ruten</h2>
+    <p style="font-size:0.7em; margin:5px 0">Klikk på markørene for dag-info · scroll for å zoome (etter klikk i kartet)</p>
+    <div id="routemap"></div>
+  </section>
+
+  <!-- DAGS-SLIDES -->
+  <section id="day-slides-anchor"></section>
+
+  <!-- BUDSJETT -->
+  <section>
+    <h2>💰 Budsjett — estimat</h2>
+    <table class="budget-table">
+      <tr><td>Overnatting (13 netter camping/hytte á 800 kr)</td><td>10 400 kr</td></tr>
+      <tr><td>Mat — matlaging selv 70% (700 kr/dag × 14)</td><td>9 800 kr</td></tr>
+      <tr><td>Restaurant (5 × 1 000 kr)</td><td>5 000 kr</td></tr>
+      <tr><td>Bensin + bompenger + ferge (Lærdal/Geiranger)</td><td>6 500 kr</td></tr>
+      <tr><td>Dyreparken (familie)</td><td>1 500 kr</td></tr>
+      <tr><td>Flåmsbana (familie)</td><td>1 200 kr</td></tr>
+      <tr><td>Geirangerfjord-cruise</td><td>1 200 kr</td></tr>
+      <tr><td>Hunderfossen Familiepark</td><td>1 800 kr</td></tr>
+      <tr><td>Bergen Akvariet</td><td>800 kr</td></tr>
+      <tr><td>VilVite Bergen</td><td>600 kr</td></tr>
+      <tr><td>Buffer / uforutsett</td><td>2 000 kr</td></tr>
+      <tr class="total"><td>TOTAL</td><td>40 800 kr ⚠</td></tr>
+    </table>
+    <p style="font-size:0.6em; margin-top:15px; color:#666">
+      ⚠ Over 35-40k vinduet. <strong>Spare-tips:</strong> Kutt Hunderfossen → Maihaugen (gratis for barn, –1 800).
+      Kutt 2 restaurantkvelder (–2 000). Justert: <strong>~37 000 kr</strong>.
+    </p>
+  </section>
+
+  <!-- FORDELER / ULEMPER -->
+  <section>
+    <h2>📊 Pros & Cons</h2>
+    <div class="pros-cons">
+      <div class="col pros">
+        <h3>✅ Fordeler</h3>
+        <ul>
+          <li>Klassisk "Norge på 14 dager"-opplevelse</li>
+          <li>Maks variasjon: by + fjord + fjell + tur</li>
+          <li>Bergen sentrum + Bryggen</li>
+          <li>Geirangerfjord (UNESCO)</li>
+          <li>Trollstigen — magisk kjøreopplevelse</li>
+          <li>VilVite — Norges beste vitensenter</li>
+          <li>Flere ferger = mer eventyrfølelse</li>
+        </ul>
+      </div>
+      <div class="col cons">
+        <h3>⚠ Ulemper</h3>
+        <ul>
+          <li>Over budsjett uten kutt</li>
+          <li>Dag 5 (Stavanger→Bergen) er 5-6 t</li>
+          <li>Dag 11 (Geiranger→Lillehammer) er 5 t</li>
+          <li>Mer pakking inn/ut hver dag</li>
+          <li>Barna kan bli slitne i andre uke</li>
+          <li>Preikestolen utfordrende m/5-åring</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH-NEXUS -->
+  <section data-background-color="#1e3a5f">
+    <h2 style="color:white">🧪 Tech / retro-bonus</h2>
+    <div style="text-align:left; max-width:900px; margin:0 auto; color:white; font-size:0.8em">
+      <h3 style="color:#ffb84d">Stopp underveis:</h3>
+      <ul style="line-height:1.6">
+        <li><strong>VilVite Bergen (dag 6):</strong> Norges beste vitensenter for hele familien — vibrerende plate, fjord-modell, alt om vitenskap og teknologi.</li>
+        <li><strong>Norsk Oljemuseum Stavanger (dag 3):</strong> Petroleumshistorie + oljerigger + tech-historie fra 70-tallet. Veldig interaktivt.</li>
+        <li><strong>Maihaugen Lillehammer (alternativ dag 12):</strong> Frilandsmuseum + historiske industri-/data-utstillinger.</li>
+      </ul>
+      <h3 style="color:#ffb84d; margin-top:25px">Hvis dere har tid:</h3>
+      <ul style="line-height:1.6">
+        <li>Norsk Vegmuseum (mellom Lillehammer og Hjerkinn) — bil/transport-historie.</li>
+        <li>Telegrafmuseum Stockhuset (Stavanger) — kortere besøk, telekommunikasjon.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OVERNATTING -->
+  <section>
+    <h2>🏨 Overnatting</h2>
+    <table class="budget-table" style="font-size:0.6em">
+      <tr><td><strong>Dag 1</strong></td><td>Roligheden Camping Kristiansand</td></tr>
+      <tr><td><strong>Dag 2</strong></td><td>Flekkefjord Camping</td></tr>
+      <tr><td><strong>Dag 3-4</strong></td><td>Mosvangen Camping Stavanger (2 netter)</td></tr>
+      <tr><td><strong>Dag 5-6</strong></td><td>Bergen Camping Lone (2 netter)</td></tr>
+      <tr><td><strong>Dag 7-8</strong></td><td>Flåm Camping &amp; Youth Hostel (2 netter)</td></tr>
+      <tr><td><strong>Dag 9-10</strong></td><td>Geiranger Camping (2 netter)</td></tr>
+      <tr><td><strong>Dag 11-12</strong></td><td>Lillehammer Camping (2 netter)</td></tr>
+      <tr><td><strong>Dag 13-14</strong></td><td>Hjem 🏡</td></tr>
+    </table>
+    <p style="font-size:0.55em; margin-top:15px; color:#666">
+      📌 Geiranger Camping og Flåm Camping er ekstremt populære i uke 31-32 — book minst 2 mnd før.
+    </p>
+  </section>
+
+  <!-- PAKKELISTE -->
+  <section>
+    <h2>🎒 Pakkeliste-tips</h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; text-align:left; font-size:0.7em">
+      <div>
+        <h3 style="color:#d97706">For fjordturen</h3>
+        <ul style="list-style:none; padding:0">
+          <li>☔ Regntøy (essensielt på vestkysten)</li>
+          <li>🧥 Vindjakke for båt/cruise</li>
+          <li>🥾 Tursko for Preikestolen-rute</li>
+          <li>🎒 Sekk + matpakke for tur</li>
+          <li>🌡️ Lag på lag — temperatur svinger</li>
+          <li>🩴 Sandaler + badetøy</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:#d97706">For den lange kjøringen</h3>
+        <ul style="list-style:none; padding:0">
+          <li>🎲 Brettspill / kortspill</li>
+          <li>📱 iPad/tablet m/film lastet ned</li>
+          <li>🎧 Hodetelefoner (2 stk)</li>
+          <li>🍪 Mye snacks + drikke</li>
+          <li>🚗 Bombrikke aktiv (AutoPASS)</li>
+          <li>🗺️ Offline-kart (Google Maps)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- VIKTIGE TIPS -->
+  <section>
+    <h2>💡 Spesielle tips for B-ruten</h2>
+    <div style="text-align:left; max-width:900px; margin:0 auto; font-size:0.7em">
+      <h3 style="color:#d62828">Preikestolen-dilemma (dag 4)</h3>
+      <p>Tur opp er 4 km (330m stigning, ~2t opp). 5-åringen er for liten. Alternativer:</p>
+      <ul>
+        <li><strong>Splitt familien:</strong> Mor + 8-åring tar Preikestolen. Far + 5-åring tar Lysefjord-cruise fra Stavanger.</li>
+        <li><strong>Felles cruise:</strong> Alle tar 3-timers cruise — ser Preikestolen nedenfra, ingen klatring.</li>
+        <li><strong>Alternativ familietur:</strong> Iglhana-fossen, kortere fottur i området.</li>
+      </ul>
+
+      <h3 style="color:#d62828; margin-top:25px">Lange kjøreøkter — slik gjør du dem ok</h3>
+      <ul>
+        <li><strong>Dag 5 (Stav→Bgo):</strong> Stopp i Røldal (midt på, ~3t inn). Lunsj + lek 1 time. Så 2-3 t videre.</li>
+        <li><strong>Dag 11 (Geir→Lhmr):</strong> Stopp ved Trollstigen-platået (foto + souvenirbutikk). Lunsj i Åndalsnes.</li>
+        <li><strong>Hjemtur dag 13:</strong> Slå dette i to dager hvis mulig — overnatt i Drammen/Skien for å unngå sliten siste dag.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- AVSLUTNING -->
+  <section data-background-color="#1e3a5f">
+    <h1 style="color:white">God tur! 🇳🇴</h1>
+    <p style="color:white; font-size:1.2em">Alternativ B — Klassisk Vestlandsrundtur</p>
+    <p style="color:white; opacity:0.8">
+      <a href="index.html" style="color:#ffb84d">← Tilbake til oversikt</a>
+    </p>
+  </section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/routes.js"></script>
+<script src="assets/map.js"></script>
+
+<script>
+const DAY_IMAGES_B = {
+  1: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Swimming_Tigers.jpg/1280px-Swimming_Tigers.jpg",
+  2: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Flekkefjord-Nirwana.jpg/1280px-Flekkefjord-Nirwana.jpg",
+  3: "https://upload.wikimedia.org/wikipedia/commons/thumb/2/28/Breiavatnet_-_Stavanger%2C_Norway_2021-08-01_%2802%29.jpg/1280px-Breiavatnet_-_Stavanger%2C_Norway_2021-08-01_%2802%29.jpg",
+  4: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/Lyse_Fjord_et_Preikestolen.jpg/1280px-Lyse_Fjord_et_Preikestolen.jpg",
+  5: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3b/Bergen_panorama_at_night_-_panoramio_%281%29.jpg/1280px-Bergen_panorama_at_night_-_panoramio_%281%29.jpg",
+  6: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Bryggen%2C_Bergen%2C_Noruega%2C_2019-09-08%2C_DD_115-117_PAN.jpg/1280px-Bryggen%2C_Bergen%2C_Noruega%2C_2019-09-08%2C_DD_115-117_PAN.jpg",
+  7: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Sognefjord%2C_Norway.jpg/1280px-Sognefjord%2C_Norway.jpg",
+  8: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Fl%C3%A5msbana.jpg/1280px-Fl%C3%A5msbana.jpg",
+  9: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Geirangerfjord_.jpg/1280px-Geirangerfjord_.jpg",
+  10: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/Naer%C3%B8yfjorden.jpg/1280px-Naer%C3%B8yfjorden.jpg",
+  11: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/ef/DSC07845-Panorama.jpg/1280px-DSC07845-Panorama.jpg",
+  12: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Hunderfossen_-_Trollet.JPG/1280px-Hunderfossen_-_Trollet.JPG",
+  13: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Lillehammer_City.jpg/1280px-Lillehammer_City.jpg",
+  14: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg/1280px-Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg"
+};
+const FALLBACK_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Geirangerfjord_.jpg/1280px-Geirangerfjord_.jpg";
+
+const route = ROUTES.B;
+const anchor = document.getElementById('day-slides-anchor');
+const parent = anchor.parentElement;
+
+route.days.forEach(d => {
+  const img = DAY_IMAGES_B[d.day] || FALLBACK_IMG;
+  const slide = document.createElement('section');
+  slide.innerHTML = `
+    <div class="day-slide">
+      <div class="day-img" style="background-image:url('${img}')"></div>
+      <div class="day-info">
+        <span class="date-chip">DAG ${d.day} · ${d.date}</span>
+        <h2>${d.place}</h2>
+        <h3>${d.activity}</h3>
+        <div class="meta-row">
+          <div class="meta">🚗 <strong>Kjøretid:</strong> ${d.drive}</div>
+          <div class="meta">🏕️ <strong>Overnatting:</strong> ${d.lodging}</div>
+        </div>
+      </div>
+    </div>
+  `;
+  parent.insertBefore(slide, anchor);
+});
+anchor.remove();
+
+Reveal.initialize({
+  hash: true,
+  controls: true,
+  progress: true,
+  center: true,
+  transition: 'slide',
+  width: 1280,
+  height: 760
+});
+
+Reveal.on('slidechanged', e => {
+  if (e.currentSlide.classList.contains('map-slide') && !window._mapInited) {
+    window._mapInited = true;
+    setTimeout(() => renderRouteMap('routemap', 'B'), 100);
+  }
+});
+
+setTimeout(() => {
+  const cur = Reveal.getCurrentSlide();
+  if (cur && cur.classList.contains('map-slide') && !window._mapInited) {
+    window._mapInited = true;
+    renderRouteMap('routemap', 'B');
+  }
+}, 500);
+</script>
+
+</body>
+</html>

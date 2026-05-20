@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternativ A — Hardangerfjord-base · Sommerferie 2026</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+  <!-- TITTEL -->
+  <section class="title-slide" data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Odda-Hardangerfjord.jpg/1280px-Odda-Hardangerfjord.jpg" data-background-opacity="0.35">
+    <h1>Alternativ A</h1>
+    <h2>Hardangerfjord-base</h2>
+    <p class="subtitle">Avslappet familietempo · base-camps · maks 3 t kjøring per dag</p>
+    <div class="price-tag">~29 000 kr · 14 dager · 4 reisende</div>
+    <p style="margin-top:30px; font-size:0.9em; color:#444">
+      27. juli – 9. august 2026<br>
+      <a href="index.html" style="color:#1e3a5f">← Tilbake til oversikt</a>
+    </p>
+  </section>
+
+  <!-- KART -->
+  <section class="map-slide">
+    <h2 style="margin-bottom:10px">🗺️ Hele ruten</h2>
+    <p style="font-size:0.7em; margin:5px 0">Klikk på markørene for dag-info · scroll for å zoome (etter klikk i kartet)</p>
+    <div id="routemap"></div>
+  </section>
+
+  <!-- DAGS-SLIDES (genereres av JS) -->
+  <section id="day-slides-anchor"></section>
+
+  <!-- BUDSJETT -->
+  <section>
+    <h2>💰 Budsjett — estimat</h2>
+    <table class="budget-table">
+      <tr><td>Overnatting (11 netter camping/hytte á 600 kr)</td><td>6 600 kr</td></tr>
+      <tr><td>Mat — matlaging selv 80% (600 kr/dag × 14)</td><td>8 400 kr</td></tr>
+      <tr><td>Restaurant (3 × 900 kr)</td><td>2 700 kr</td></tr>
+      <tr><td>Bensin + bompenger + ferge</td><td>4 500 kr</td></tr>
+      <tr><td>Dyreparken (familie 4)</td><td>1 500 kr</td></tr>
+      <tr><td>Mineralparken Evje</td><td>800 kr</td></tr>
+      <tr><td>Flåmsbana (familie)</td><td>1 200 kr</td></tr>
+      <tr><td>Bø Sommarland (familie)</td><td>1 800 kr</td></tr>
+      <tr><td>Vitenfabrikken Sandnes</td><td>400 kr</td></tr>
+      <tr><td>Buffer / uforutsett</td><td>1 500 kr</td></tr>
+      <tr class="total"><td>TOTAL</td><td>29 400 kr ✅</td></tr>
+    </table>
+    <p style="font-size:0.6em; margin-top:20px; color:#666">
+      ✅ Innenfor strammeste budsjett (under 30 000 kr).<br>
+      Spare-tips: bytt 1-2 hytter mot telt-camping (–1 000 kr), kutt 1 restaurant (–900 kr).
+    </p>
+  </section>
+
+  <!-- FORDELER / ULEMPER -->
+  <section>
+    <h2>📊 Pros & Cons</h2>
+    <div class="pros-cons">
+      <div class="col pros">
+        <h3>✅ Fordeler</h3>
+        <ul>
+          <li>Lavest kostnad — innenfor 30k</li>
+          <li>Maks 3 t kjøring per dag</li>
+          <li>3 netter base-camp i Hardanger (avslapning!)</li>
+          <li>Mye gratis natur (fjell, frukthager, foss)</li>
+          <li>Variert: zoo + vannpark + tog + fjord</li>
+          <li>Tech-stopp i Sandnes (Vitenfabrikken)</li>
+          <li>Lite stress med dagspakking</li>
+        </ul>
+      </div>
+      <div class="col cons">
+        <h3>⚠ Ulemper</h3>
+        <ul>
+          <li>Ikke Bergen sentrum</li>
+          <li>Ikke Geirangerfjord / Trollstigen</li>
+          <li>Ingen Preikestolen-tur</li>
+          <li>Mindre "WOW" på by-fronten</li>
+          <li>Camping kan bli vått hvis dårlig vær</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH-NEXUS -->
+  <section data-background-color="#1e3a5f">
+    <h2 style="color:white">🧪 Tech / retro-bonus</h2>
+    <div style="text-align:left; max-width:900px; margin:0 auto; color:white; font-size:0.8em">
+      <h3 style="color:#ffb84d">Stopp underveis:</h3>
+      <ul style="line-height:1.6">
+        <li><strong>Vitenfabrikken Sandnes (dag 3):</strong> Interaktivt vitensenter — passer hele familien.</li>
+        <li><strong>Mineralparken Evje (dag 1):</strong> Geode-knusing, mineralutstilling — kombinerer tech-interesse med barneglede.</li>
+        <li><strong>Gaustabanen Rjukan (dag 10):</strong> Verdens lengste innendørs taubane (gravd ut under kald krig av NATO) — perfekt mix av hacking-historie og teknisk kuriositet.</li>
+      </ul>
+      <h3 style="color:#ffb84d; margin-top:25px">Hvis dere strekker dere:</h3>
+      <ul style="line-height:1.6">
+        <li>Norsk Industriarbeidermuseum Vemork (Rjukan, dag 10) — "Tungtvannsbomben"-historien. Førsteklasses spionasje/sabotasjehistorie.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OVERNATTING -->
+  <section>
+    <h2>🏕️ Overnatting</h2>
+    <table class="budget-table" style="font-size:0.6em">
+      <tr><td><strong>Dag 1</strong></td><td>Odden Camping Evje (240–800 kr/natt)</td></tr>
+      <tr><td><strong>Dag 2</strong></td><td>Roligheden Camping Kristiansand</td></tr>
+      <tr><td><strong>Dag 3</strong></td><td>Sandnes Camping / Vaulali</td></tr>
+      <tr><td><strong>Dag 4</strong></td><td>Røldal Hyttegrend &amp; Camping (hytte fra 800 kr)</td></tr>
+      <tr><td><strong>Dag 5-7</strong></td><td>Lofthus Camping (base-camp, 3 netter, ca 600-900 kr/natt)</td></tr>
+      <tr><td><strong>Dag 8</strong></td><td>Flåm Camping &amp; Youth Hostel</td></tr>
+      <tr><td><strong>Dag 9</strong></td><td>Geilo Hyttetun / Topcamp Ustaoset</td></tr>
+      <tr><td><strong>Dag 10</strong></td><td>Rjukan Hytteby &amp; Camping</td></tr>
+      <tr><td><strong>Dag 11-12</strong></td><td>Bø Camping &amp; Hytter</td></tr>
+      <tr><td><strong>Dag 13-14</strong></td><td>Hjem 🏡</td></tr>
+    </table>
+    <p style="font-size:0.55em; margin-top:15px; color:#666">
+      📌 Reserver tidlig — uke 31-32 er høysesong. Bruk topcamp.no, campnorge.no, norgesbooking.no.
+    </p>
+  </section>
+
+  <!-- PAKKELISTE -->
+  <section>
+    <h2>🎒 Pakkeliste-tips</h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; text-align:left; font-size:0.7em">
+      <div>
+        <h3 style="color:#d97706">Klær / utstyr</h3>
+        <ul style="list-style:none; padding:0">
+          <li>☔ Regntøy (alle)</li>
+          <li>🥾 Gode tursko (alle)</li>
+          <li>👕 Lag på lag — vær variabelt</li>
+          <li>🩴 Sandaler / badesko</li>
+          <li>🩲 Badetøy + håndkle</li>
+          <li>🛌 Liggeunderlag / luftmadrass</li>
+          <li>🔦 Hodelykt + ekstrabatterier</li>
+          <li>🪥 Toalettmappe</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:#d97706">Praktisk for barna</h3>
+        <ul style="list-style:none; padding:0">
+          <li>🎲 Kortspill, brettspill</li>
+          <li>📚 Bøker / lese-app</li>
+          <li>🎧 Hodetelefoner</li>
+          <li>🍪 Snacks for kjøreturen</li>
+          <li>💊 Førstehjelp + plaster</li>
+          <li>🚗 Bilstoler (sjekk regler)</li>
+          <li>🌟 Reflekser</li>
+          <li>📱 Powerbank / lader</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVSLUTNING -->
+  <section data-background-color="#2d6a4f">
+    <h1 style="color:white">God tur! 🇳🇴</h1>
+    <p style="color:white; font-size:1.2em">Alternativ A — Hardangerfjord-base</p>
+    <p style="color:white; opacity:0.8">
+      <a href="index.html" style="color:#ffb84d">← Tilbake til oversikt</a>
+    </p>
+  </section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/routes.js"></script>
+<script src="assets/map.js"></script>
+
+<script>
+// Bildebank for Alt A — én pr dag
+const DAY_IMAGES_A = {
+  1: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Evje-Hornnes01.jpg/1280px-Evje-Hornnes01.jpg",
+  2: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Swimming_Tigers.jpg/1280px-Swimming_Tigers.jpg",
+  3: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bf/Vitenfabrikken%2C_Sandnes.JPG/1280px-Vitenfabrikken%2C_Sandnes.JPG",
+  4: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3c/R%C3%B8ldal.jpg/1280px-R%C3%B8ldal.jpg",
+  5: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Odda-Hardangerfjord.jpg/1280px-Odda-Hardangerfjord.jpg",
+  6: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Steinsdalsfossen.jpg/1280px-Steinsdalsfossen.jpg",
+  7: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Buerbreen_i_Hardanger.jpg/1280px-Buerbreen_i_Hardanger.jpg",
+  8: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Fl%C3%A5msbana.jpg/1280px-Fl%C3%A5msbana.jpg",
+  9: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Stegastein_viewpoint_-_panoramio_%281%29.jpg/1280px-Stegastein_viewpoint_-_panoramio_%281%29.jpg",
+  10: "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Rjukan_panorama_IMG_0052.JPG/1280px-Rjukan_panorama_IMG_0052.JPG",
+  11: "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/B%C3%B8_Sommarland_-_Splash.JPG/1280px-B%C3%B8_Sommarland_-_Splash.JPG",
+  12: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Telemarkskanalen.jpg/1280px-Telemarkskanalen.jpg",
+  13: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg/1280px-Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg",
+  14: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg/1280px-Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg"
+};
+const FALLBACK_IMG = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Odda-Hardangerfjord.jpg/1280px-Odda-Hardangerfjord.jpg";
+
+const route = ROUTES.A;
+const anchor = document.getElementById('day-slides-anchor');
+const parent = anchor.parentElement;
+
+route.days.forEach(d => {
+  const img = DAY_IMAGES_A[d.day] || FALLBACK_IMG;
+  const slide = document.createElement('section');
+  slide.innerHTML = `
+    <div class="day-slide">
+      <div class="day-img" style="background-image:url('${img}')"></div>
+      <div class="day-info">
+        <span class="date-chip">DAG ${d.day} · ${d.date}</span>
+        <h2>${d.place}</h2>
+        <h3>${d.activity}</h3>
+        <div class="meta-row">
+          <div class="meta">🚗 <strong>Kjøretid:</strong> ${d.drive}</div>
+          <div class="meta">🏕️ <strong>Overnatting:</strong> ${d.lodging}</div>
+        </div>
+      </div>
+    </div>
+  `;
+  parent.insertBefore(slide, anchor);
+});
+anchor.remove();
+
+Reveal.initialize({
+  hash: true,
+  controls: true,
+  progress: true,
+  center: true,
+  transition: 'slide',
+  width: 1280,
+  height: 760
+});
+
+Reveal.on('slidechanged', e => {
+  // Initialiser kart første gang det vises
+  if (e.currentSlide.classList.contains('map-slide') && !window._mapInited) {
+    window._mapInited = true;
+    setTimeout(() => renderRouteMap('routemap', 'A'), 100);
+  }
+});
+
+// Init kart umiddelbart hvis vi starter på kart-slide (via #/...)
+setTimeout(() => {
+  const cur = Reveal.getCurrentSlide();
+  if (cur && cur.classList.contains('map-slide') && !window._mapInited) {
+    window._mapInited = true;
+    renderRouteMap('routemap', 'A');
+  }
+}, 500);
+</script>
+
+</body>
+</html>
