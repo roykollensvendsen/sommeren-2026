@@ -44,6 +44,27 @@ const ROUTES = {
     ]
   },
 
+  D: {
+    name: "Alternativ D: Amsterdam / Nederland",
+    color: "#FF8C42",
+    days: [
+      { day: 1, date: "man 27/7", place: "Tvedestrand → Amsterdam", lat: 52.3676, lng: 4.9041, drive: "1,5t bil + fly + transfer", activity: "Reisedag: kjøre Tvedestrand → OSL (1,5t), fly OSL→AMS direkte (1t50min), tog/transfer til Amsterdam. Innkomst kveld.", lodging: "Amsterdam hotell (4 netter)" },
+      { day: 2, date: "tir 28/7", place: "Amsterdam", lat: 52.3580, lng: 4.8686, drive: "0", activity: "Lett start: Vondelpark, lekeplass, kort kanaltur (60 min). Pannekake-lunsj. Avslapning etter flytur.", lodging: "Amsterdam" },
+      { day: 3, date: "ons 29/7", place: "Amsterdam — NEMO", lat: 52.3738, lng: 4.9123, drive: "0", activity: "NEMO Science Museum heldag — interaktive vitenskap-utstillinger over 6 etasjer. Tak-terrasse med Amstel-utsikt.", lodging: "Amsterdam" },
+      { day: 4, date: "tor 30/7", place: "Amsterdam — hvile", lat: 52.3676, lng: 4.9041, drive: "0", activity: "Hviledag: Artis Royal Zoo formiddag + sykkeltur eller bading ettermiddag. Rolig kveld.", lodging: "Amsterdam" },
+      { day: 5, date: "fre 31/7", place: "Amsterdam → Den Haag", lat: 52.0705, lng: 4.3007, drive: "1t tog", activity: "Morgen-tog til Den Haag (1t, OV-chipkaart). Innkomst, strand-ettermiddag på Scheveningen.", lodging: "Den Haag hotell (4 netter)" },
+      { day: 6, date: "lør 1/8", place: "Madurodam Den Haag", lat: 52.0976, lng: 4.2986, drive: "0", activity: "Madurodam heldag — mini-Nederland i 1:25 skala. 50 000+ små mennesker, tog og båter. Magisk for 5-8 år.", lodging: "Den Haag" },
+      { day: 7, date: "søn 2/8", place: "Scheveningen / Den Haag", lat: 52.1063, lng: 4.2730, drive: "0", activity: "Hviledag: Scheveningen strand heldag — sand, sjøvann, badmuligheter. Iskremstand på molo, evt SEA LIFE.", lodging: "Den Haag" },
+      { day: 8, date: "man 3/8", place: "Kinderdijk dagstur", lat: 51.8826, lng: 4.6402, drive: "1t tog/bil", activity: "Dagstur til Kinderdijk — UNESCO 19 hollandske møller fra 1700-tallet. Sykkel- eller båttur rundt.", lodging: "Den Haag" },
+      { day: 9, date: "tir 4/8", place: "Den Haag → Kaatsheuvel", lat: 51.6471, lng: 5.0440, drive: "1,5t (leiebil)", activity: "Leiebil Den Haag → Kaatsheuvel (Efteling-området). Innkomst Center Parcs / Landal — basseng og lekeplass.", lodging: "Center Parcs Kaatsheuvel (5 netter)" },
+      { day: 10, date: "ons 5/8", place: "Efteling", lat: 51.6494, lng: 5.0480, drive: "0", activity: "Efteling heldag — Nederlands største eventyrpark. Magisk for 5-8 år. Eventyrskogen, småbarn-ride, mellomstore berg-og-dalbaner.", lodging: "Kaatsheuvel" },
+      { day: 11, date: "tor 6/8", place: "Center Parcs hvile", lat: 51.6471, lng: 5.0440, drive: "0", activity: "Hviledag: subtropisk badeland, sykkel i Loonse Duinen, lekeplass, evt bowling/minigolf på campen.", lodging: "Kaatsheuvel" },
+      { day: 12, date: "fre 7/8", place: "HomeComputerMuseum Helmond", lat: 51.4827, lng: 5.6614, drive: "45m hver vei", activity: "Tech-pappa-dag! HomeComputerMuseum — time travel gjennom 80/90-talls hjemmedatorer (Commodore, Apple, Atari) + arcade-kafé. 3-4 timer.", lodging: "Kaatsheuvel" },
+      { day: 13, date: "lør 8/8", place: "Efteling halv-dag / hvile", lat: 51.6494, lng: 5.0480, drive: "0", activity: "Siste dag: halv-dag Efteling med barnas favoritter, eller chill på Center Parcs. Pakk om kvelden.", lodging: "Kaatsheuvel" },
+      { day: 14, date: "søn 9/8", place: "Kaatsheuvel → Tvedestrand", lat: 58.6225, lng: 8.9319, drive: "1,5t bil + fly + 1,5t bil", activity: "Reisedag hjem: leiebil til Schiphol (1,5t), fly AMS→OSL (1t50min), kjøre Tvedestrand. Hjem kveld.", lodging: "Hjem" }
+    ]
+  },
+
   C: {
     name: "Alternativ C: Sverige-twist",
     color: "#003d99",

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alternativ D — Amsterdam / Nederland · Sommerferie 2026</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reset.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/theme/white.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+<div class="reveal">
+<div class="slides">
+
+  <!-- TITTEL -->
+  <section class="title-slide" data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Efteling_The_House_of_the_Five_Senses.jpg/1280px-Efteling_The_House_of_the_Five_Senses.jpg" data-background-opacity="0.45">
+    <h1>Alternativ D</h1>
+    <h2>Amsterdam / Nederland</h2>
+    <p class="subtitle">Fly · Amsterdam · Den Haag · Efteling · 3 base-camps · HomeComputerMuseum</p>
+    <div class="price-tag">~50 000 kr · 14 dager · 4 reisende</div>
+    <p style="margin-top:30px; font-size:0.9em; color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.4)">
+      27. juli – 9. august 2026<br>
+      <a href="index.html" style="color:#FFD93D">← Tilbake til oversikt</a>
+    </p>
+  </section>
+
+  <!-- KART -->
+  <section class="map-slide">
+    <h2 style="margin-bottom:10px">🗺️ Hele ruten</h2>
+    <p style="font-size:0.7em; margin:5px 0">Klikk på markørene for dag-info · scroll for å zoome (etter klikk i kartet)</p>
+    <div id="routemap"></div>
+  </section>
+
+  <!-- DAGS-SLIDES -->
+  <section id="day-slides-anchor"></section>
+
+  <!-- BUDSJETT -->
+  <section>
+    <h2>💰 Budsjett — estimat</h2>
+    <table class="budget-table">
+      <tr><td>Fly OSL ⇄ AMS (4 pers, bestilt 5 mnd før)</td><td>12 000 kr</td></tr>
+      <tr><td>Overnatting Amsterdam (4 netter, familjehotell)</td><td>5 600 kr</td></tr>
+      <tr><td>Overnatting Den Haag (4 netter, familjehotell)</td><td>4 400 kr</td></tr>
+      <tr><td>Center Parcs Kaatsheuvel (5 netter, bungalow)</td><td>6 500 kr</td></tr>
+      <tr><td>Mat — matlaging selv 60% (800 kr/dag × 14)</td><td>11 200 kr</td></tr>
+      <tr><td>Restaurant + pannekake-hus (4 × 1 000 kr)</td><td>4 000 kr</td></tr>
+      <tr><td>Leiebil Kaatsheuvel-etappen (6 dager)</td><td>3 500 kr</td></tr>
+      <tr><td>OV-chipkaart + tog + sykkelutleie</td><td>2 500 kr</td></tr>
+      <tr><td>Efteling (familie, 1,5 dager)</td><td>2 800 kr</td></tr>
+      <tr><td>NEMO + Artis + Madurodam + Kinderdijk + Helmond</td><td>3 600 kr</td></tr>
+      <tr><td>Parkering OSL + reiseforsikring</td><td>1 800 kr</td></tr>
+      <tr><td>Buffer / uforutsett</td><td>2 100 kr</td></tr>
+      <tr class="total"><td>TOTAL</td><td>50 000 kr ⚠</td></tr>
+    </table>
+    <p style="font-size:0.6em; margin-top:15px; color:#666">
+      ⚠ Over budsjettrammen (35-40k). Dette er <strong>premium-alternativet</strong> — utlandet koster mer.<br>
+      <strong>Spare-tips:</strong> Bestill fly i januar 2026 (kan bli 8 000 kr), skip Center Parcs (camping/budget-hotell -3 000),
+      lag mer egen mat (-2 000). Justert: <strong>~42 000 kr</strong>.<br>
+      <strong>Drive-alternativ:</strong> Ferge KRS-Hirtshals + 2 overnattinger underveis hver vei = sparer ~3-4 000 kr,
+      men bruker 4 dager av ferien på reise.
+    </p>
+  </section>
+
+  <!-- FORDELER / ULEMPER -->
+  <section>
+    <h2>📊 Pros & Cons</h2>
+    <div class="pros-cons">
+      <div class="col pros">
+        <h3>✅ Fordeler</h3>
+        <ul>
+          <li>Helt nytt land — utenlands-eventyr!</li>
+          <li>3 base-camps med 4-5 netter hver</li>
+          <li>Hvile-dag etter NEMO, Madurodam, Efteling, Helmond</li>
+          <li>Efteling — Europas beste eventyrpark for barn 5-8</li>
+          <li>NEMO — Roy får tech, barna lærer leke</li>
+          <li>Center Parcs basseng = vannland gratis</li>
+          <li>Sykkelby Amsterdam — magisk med barn</li>
+          <li>Bonus: HomeComputerMuseum (retro-paradis)</li>
+        </ul>
+      </div>
+      <div class="col cons">
+        <h3>⚠ Ulemper</h3>
+        <ul>
+          <li>Premiumalternativ — ~50 000 kr</li>
+          <li>2 reisedager (D1 + D14) går til logistikk</li>
+          <li>Fly med 5-åring krever planlegging</li>
+          <li>Amsterdam kan være varmt og fullt i august</li>
+          <li>Bagasje-begrensninger på fly</li>
+          <li>Ingen norsk natur</li>
+          <li>Krever pass + EU-helsekort</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECH-NEXUS -->
+  <section data-background-color="#1e3a5f">
+    <h2 style="color:white">🧪 Tech / retro-bonus — best av alle alternativene!</h2>
+    <div style="text-align:left; max-width:950px; margin:0 auto; color:white; font-size:0.75em">
+      <h3 style="color:#FFD93D">På programmet:</h3>
+      <ul style="line-height:1.6">
+        <li><strong>NEMO Science Museum Amsterdam (dag 3):</strong> 6 etasjer interaktiv vitenskap — kjemilab, musikklab, store såpebobler. Roy får tech-glede, barna lærer leke.</li>
+        <li><strong>HomeComputerMuseum Helmond (dag 12):</strong> ⭐ Komplett time-travel gjennom 80/90-talls hjemmedatorer (Commodore 64, Atari, Amiga, Apple). Arcade-kafé med spillbare maskiner. Reparasjonsverksted. Perfekt for både Roy og 8-årige Lukas.</li>
+      </ul>
+      <h3 style="color:#FFD93D; margin-top:25px">Bonus om dere strekker dere:</h3>
+      <ul style="line-height:1.6">
+        <li><strong>Bonami Spelcomputer Museum, Zwolle:</strong> 10 000+ spillbare retrospill, arcade-haller, pinball. ~1t 20min tog fra Amsterdam. Helt unik. Alternativ til Helmond hvis dere vil ha mer "spillbart".</li>
+        <li><strong>Blast Galaxy Amsterdam:</strong> Retro-arkade med flat fee, ingen mynter. Donkey Kong, Pac-Man, Mario. En kveldsaktivitet.</li>
+        <li><strong>Philips Museum Eindhoven:</strong> Tirsdag 15:30 har gratis inngang. Philips-innovasjonshistorie.</li>
+      </ul>
+      <h3 style="color:#FFD93D; margin-top:25px">Drøm-detour (krever ekstra dag):</h3>
+      <ul style="line-height:1.6">
+        <li><strong>The Arcade Hotel Amsterdam:</strong> Gaming-tematisert overnatting med NES/SNES/Sega-konsoller på rommet. Bytt ut én Amsterdam-natt for magisk barneopplevelse.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- OVERNATTING -->
+  <section>
+    <h2>🏨 Overnatting — 3 base-camps</h2>
+    <table class="budget-table" style="font-size:0.65em">
+      <tr><td><strong>Dag 1-4</strong></td><td>Amsterdam familjehotell (4 netter) — Oud-West eller forsteder med tog til sentrum</td></tr>
+      <tr><td><strong>Dag 5-8</strong></td><td>Den Haag familjehotell (4 netter) — gå/buss til Scheveningen + Madurodam</td></tr>
+      <tr><td><strong>Dag 9-13</strong></td><td>Center Parcs Kaatsheuvel (5 netter) — bungalow med basseng-tilgang, kort fra Efteling</td></tr>
+      <tr><td><strong>Dag 14</strong></td><td>Hjem 🏡</td></tr>
+    </table>
+    <p style="font-size:0.55em; margin-top:15px; color:#666">
+      📌 Center Parcs/Landal er populært blant nederlandske familier — book senest mars/april 2026 for sommerukene.<br>
+      📌 Unngå Airbnb i Amsterdam sentrum — nye restriksjoner fra 2026 (max 15 dager/år i mange områder).<br>
+      📌 Alternativ: 1 natt på <strong>The Arcade Hotel</strong> i Amsterdam — gaming-tematisert overnatting.
+    </p>
+  </section>
+
+  <!-- PRAKTISK -->
+  <section>
+    <h2>💡 Spesielle tips for Nederland-ruten</h2>
+    <div style="text-align:left; max-width:950px; margin:0 auto; font-size:0.7em">
+      <h3 style="color:#E85555">Reise og logistikk</h3>
+      <ul>
+        <li><strong>Bestill fly tidlig:</strong> SAS/KLM direkte OSL→AMS billigst i januar/februar 2026. Ventes på pris-spike i april.</li>
+        <li><strong>Parkering OSL:</strong> Long-term parkering ~150 kr/dag → ~2 100 kr for 14 dager. Bestill i forveien.</li>
+        <li><strong>Pass + EU-helsekort:</strong> Sjekk gyldighet for alle 4 senest 2 mnd før.</li>
+        <li><strong>Bagasje:</strong> KLM/SAS innsjekket bag 23kg/person. Med 4 pers = 92kg. Bør holde for 14 dager.</li>
+      </ul>
+
+      <h3 style="color:#E85555; margin-top:25px">I Amsterdam og Den Haag</h3>
+      <ul>
+        <li><strong>OV-chipkaart:</strong> Engangs ~€7,50 + lad opp. Tog/buss/sporvogn over hele Nederland. Familjerabatt 40% off-peak.</li>
+        <li><strong>Sykkelutleie:</strong> Black Bikes / MacBike — €19/dag for voksen-sykkel med barnesete (5-åring). 8-åring egen sykkel: €15/dag.</li>
+        <li><strong>Ikke parker i Amsterdam:</strong> €20-50/dag, miljøsone. Bruk P+R (Park & Ride) hvis dere har bil.</li>
+      </ul>
+
+      <h3 style="color:#E85555; margin-top:25px">Efteling-tips</h3>
+      <ul>
+        <li><strong>Kjøp billett online</strong> — sparer 5-10 € per billett.</li>
+        <li><strong>Eventyrskogen</strong> er perfekt for begge barn — magisk, ikke skummelt.</li>
+        <li><strong>Småbarn-ride</strong> for 5-åringen: Carnaval Festival, Droomvlucht, Pirat ride.</li>
+        <li><strong>8-åringen</strong> kan ta de fleste mellomstore: Python, Joris en de Draak (trekkebanen!).</li>
+        <li><strong>Mat i parken er dyrt</strong> — pakk niste, finn picknic-områder.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- PAKKELISTE -->
+  <section>
+    <h2>🎒 Pakkeliste-tips</h2>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:30px; text-align:left; font-size:0.7em">
+      <div>
+        <h3 style="color:#E85555">Flyturen + hverdager</h3>
+        <ul style="list-style:none; padding:0">
+          <li>📕 Pass (alle 4) + EU-helsekort</li>
+          <li>📱 KLM/SAS-app for boarding pass</li>
+          <li>🎧 Hodetelefoner + iPad for barna</li>
+          <li>🍪 Snacks (smør på smørbrød ikke tillatt i håndbagasje)</li>
+          <li>👕 Lett sommerklær (20-25°C)</li>
+          <li>🧥 Vindjakke + regnjakke (Nederland regner)</li>
+          <li>🩴 Sandaler + komfortable sko</li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="color:#E85555">Park-dager + strand</h3>
+        <ul style="list-style:none; padding:0">
+          <li>🩲 Badetøy + håndkle (Center Parcs basseng)</li>
+          <li>🧴 Solkrem SPF 50+ for barn</li>
+          <li>🧢 Solhatt for begge barn</li>
+          <li>🎒 Sekk for dagsturer</li>
+          <li>💧 Vannflasker (fyll på)</li>
+          <li>📷 Kamera for Madurodam og Kinderdijk</li>
+          <li>💳 Visa/Mastercard (Nederland er nesten cashless)</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- AVSLUTNING -->
+  <section data-background-color="#1e3a5f">
+    <h1 style="color:#FFD93D">Tot ziens! 🌷</h1>
+    <p style="color:white; font-size:1.2em">Alternativ D — Amsterdam / Nederland</p>
+    <p style="color:white; opacity:0.85">
+      <a href="index.html" style="color:#FFD93D">← Tilbake til oversikt</a>
+    </p>
+  </section>
+
+</div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/reveal.js@5.1.0/dist/reveal.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="assets/routes.js"></script>
+<script src="assets/map.js"></script>
+
+<script>
+const DAY_IMAGES_D = {
+  1: "https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png",
+  2: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg",
+  3: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Armsterdam_-_panoramio.jpg",
+  4: "https://upload.wikimedia.org/wikipedia/commons/8/85/ArtisIngang.jpg",
+  5: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Den_Haag_Skyline_1.jpg/1280px-Den_Haag_Skyline_1.jpg",
+  6: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Madurodam_main_entrance.jpg",
+  7: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Den_Haag_Scheveningen_Pier_32.jpg/1280px-Den_Haag_Scheveningen_Pier_32.jpg",
+  8: "https://upload.wikimedia.org/wikipedia/commons/f/ff/KinderdijkMolens02.jpg",
+  9: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Langstraat_-_Kaatsheuvel_-_Meester_Schoenmaker_Monument3.jpg",
+  10: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Efteling_The_House_of_the_Five_Senses.jpg/1280px-Efteling_The_House_of_the_Five_Senses.jpg",
+  11: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Langstraat_-_Kaatsheuvel_-_Meester_Schoenmaker_Monument3.jpg",
+  12: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Voorkant_homecomputermuseum.jpg/1280px-Voorkant_homecomputermuseum.jpg",
+  13: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Efteling_The_House_of_the_Five_Senses.jpg/1280px-Efteling_The_House_of_the_Five_Senses.jpg",
+  14: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg/1280px-Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg"
+};
+const FALLBACK_IMG = "https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png";
+
+const route = ROUTES.D;
+const anchor = document.getElementById('day-slides-anchor');
+const parent = anchor.parentElement;
+
+route.days.forEach(d => {
+  const img = DAY_IMAGES_D[d.day] || FALLBACK_IMG;
+  const slide = document.createElement('section');
+  slide.innerHTML = `
+    <div class="day-slide">
+      <div class="day-img" style="background-image:url('${img}')"></div>
+      <div class="day-info">
+        <span class="date-chip">DAG ${d.day} · ${d.date}</span>
+        <h2>${d.place}</h2>
+        <h3>${d.activity}</h3>
+        <div class="meta-row">
+          <div class="meta">🚗 <strong>Reisetid:</strong> ${d.drive}</div>
+          <div class="meta">🏨 <strong>Overnatting:</strong> ${d.lodging}</div>
+        </div>
+      </div>
+    </div>
+  `;
+  parent.insertBefore(slide, anchor);
+});
+anchor.remove();
+
+Reveal.initialize({
+  hash: true,
+  controls: true,
+  progress: true,
+  center: true,
+  transition: 'slide',
+  width: 1280,
+  height: 760
+});
+
+Reveal.on('slidechanged', e => {
+  if (e.currentSlide.classList.contains('map-slide') && !window._mapInited) {
+    window._mapInited = true;
+    setTimeout(() => renderRouteMap('routemap', 'D'), 100);
+  }
+});
+
+setTimeout(() => {
+  const cur = Reveal.getCurrentSlide();
+  if (cur && cur.classList.contains('map-slide') && !window._mapInited) {
+    window._mapInited = true;
+    renderRouteMap('routemap', 'D');
+  }
+}, 500);
+</script>
+
+</body>
+</html>
