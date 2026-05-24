@@ -13,6 +13,103 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
+  <style>
+    .reveal .day-slide .links {
+      display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px;
+    }
+    .reveal .day-slide .links a {
+      font-size: 0.55em;
+      padding: 5px 11px;
+      background: white;
+      color: var(--teal-deep);
+      border: 1px solid var(--teal);
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 500;
+      transition: background 0.15s, color 0.15s;
+    }
+    .reveal .day-slide .links a:hover {
+      background: var(--teal);
+      color: white;
+    }
+    .reveal .info-card {
+      background: white;
+      border-radius: 16px;
+      padding: 22px 28px;
+      box-shadow: var(--shadow-soft);
+      text-align: left;
+      max-width: 1000px;
+      margin: 0 auto 18px;
+      border-left: 6px solid var(--coral);
+    }
+    .reveal .info-card.gold { border-left-color: var(--sun-deep); }
+    .reveal .info-card.teal { border-left-color: var(--teal); }
+    .reveal .info-card h3 {
+      margin: 0 0 8px;
+      font-size: 1.2em;
+    }
+    .reveal .info-card .meta-pills {
+      display: flex; gap: 10px; flex-wrap: wrap; margin: 10px 0;
+      font-size: 0.55em;
+    }
+    .reveal .info-card .meta-pills span {
+      background: var(--sand); padding: 4px 12px; border-radius: 12px;
+      color: var(--deep); border: 1px solid var(--sand-deep);
+    }
+    .reveal .info-card p { font-size: 0.65em; margin: 8px 0; line-height: 1.5; }
+    .reveal .info-card .links-row {
+      display: flex; gap: 10px; flex-wrap: wrap; margin-top: 10px;
+    }
+    .reveal .info-card .links-row a {
+      font-size: 0.55em;
+      padding: 6px 13px;
+      background: var(--coral);
+      color: white;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    .reveal .info-card .links-row a:hover { background: var(--coral-deep); }
+    .reveal .info-card.gold .links-row a { background: var(--sun-deep); color: var(--deep); }
+    .reveal .info-card.teal .links-row a { background: var(--teal-deep); }
+    .reveal .info-card .img-thumb {
+      float: right;
+      width: 200px;
+      height: 130px;
+      background-size: cover;
+      background-position: center;
+      border-radius: 10px;
+      margin: 0 0 10px 18px;
+      box-shadow: var(--shadow-soft);
+    }
+    .reveal .links-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 12px;
+      text-align: left;
+      max-width: 1100px;
+      margin: 0 auto;
+      font-size: 0.7em;
+    }
+    .reveal .links-grid .link-cell {
+      background: white;
+      padding: 12px 16px;
+      border-radius: 10px;
+      box-shadow: var(--shadow-soft);
+    }
+    .reveal .links-grid .link-cell strong {
+      display: block;
+      color: var(--deep);
+      font-family: 'Fredoka', sans-serif;
+      margin-bottom: 4px;
+    }
+    .reveal .links-grid .link-cell a {
+      color: var(--coral-deep);
+      text-decoration: none;
+      font-size: 0.85em;
+    }
+    .reveal .links-grid .link-cell a:hover { text-decoration: underline; }
+  </style>
 </head>
 <body>
 
@@ -23,8 +120,8 @@
   <section class="title-slide" data-background-image="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Efteling_The_House_of_the_Five_Senses.jpg/1280px-Efteling_The_House_of_the_Five_Senses.jpg" data-background-opacity="0.45">
     <h1>Alternativ D</h1>
     <h2>Amsterdam / Nederland</h2>
-    <p class="subtitle">Fly · Amsterdam · Den Haag · Efteling · 3 base-camps · HomeComputerMuseum</p>
-    <div class="price-tag">~50 000 kr · 14 dager · 4 reisende</div>
+    <p class="subtitle">Fly · 4 base-camps · 1 natt på The Arcade Hotel · alle retro-stopp inkludert</p>
+    <div class="price-tag">~52 000 kr · 14 dager · 4 reisende</div>
     <p style="margin-top:30px; font-size:0.9em; color:#fff; text-shadow:0 2px 8px rgba(0,0,0,0.4)">
       27. juli – 9. august 2026<br>
       <a href="index.html" style="color:#FFD93D">← Tilbake til oversikt</a>
@@ -41,34 +138,218 @@
   <!-- DAGS-SLIDES -->
   <section id="day-slides-anchor"></section>
 
+  <!-- THE ARCADE HOTEL — egen slide -->
+  <section data-background-color="#1B4965">
+    <h2 style="color:#FFD93D">🕹️ The Arcade Hotel — én magisk natt</h2>
+    <div class="info-card gold" style="color:var(--deep)">
+      <div class="img-thumb" style="background-image:url('https://upload.wikimedia.org/wikipedia/commons/6/6a/Armsterdam_-_panoramio.jpg')"></div>
+      <h3>Verdens første gaming-hotell</h3>
+      <div class="meta-pills">
+        <span>📍 De Pijp, Amsterdam</span>
+        <span>📅 1 natt (D3)</span>
+        <span>💰 ~1 800 kr/natt (familjerom)</span>
+        <span>🎮 Retro-konsoller på rommet</span>
+      </div>
+      <p>
+        Sjekk inn etter NEMO på dag 3. Rommet har originale retro-konsoller (NES, SNES, N64, PlayStation, Atari 2600, C64 — avhenger av rom-tema).
+        Bar nede med flere arkadespill og brettspill. Hotell-gjester får boards og spill gratis.
+        En perfekt magisk natt for Lukas (8) og en uventet familielykke for Alana (5).
+      </p>
+      <p style="font-size:0.6em">
+        <strong>💡 Praktisk:</strong> Book "Family room" eller "Quad" direkte via deres side.
+        Bekreft tilgjengelighet og spesifikt rom-tema ved bestilling.
+      </p>
+      <div class="links-row">
+        <a href="https://www.arcadehotel.nl/" target="_blank">🎮 arcadehotel.nl</a>
+        <a href="https://www.arcadehotel.nl/rooms" target="_blank">🛏️ Romtyper</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RETRO-PARADIS -->
+  <section data-background-color="#1B4965">
+    <h2 style="color:#FFD93D">🎮 Retro-paradiset — alle stoppene</h2>
+
+    <div class="info-card teal" style="color:var(--deep)">
+      <h3>🕹️ HomeComputerMuseum Helmond ⭐</h3>
+      <div class="meta-pills">
+        <span>📍 25 min fra Kaatsheuvel</span>
+        <span>📅 D13 formiddag</span>
+        <span>💰 €27 voksen / €5 barn (5-14)</span>
+        <span>⏱️ 2-3 timer</span>
+      </div>
+      <p>
+        Komplett time-travel gjennom 80/90-talls hjemmedatorer: Commodore 64, Apple II, Amiga, Atari ST, MSX.
+        Arcade-kafé med spillbare originalmaskiner. Reparasjonsverksted-utstilling.
+        Det aller mest passende stoppet for Roy + Lukas.
+      </p>
+      <div class="links-row">
+        <a href="https://www.homecomputermuseum.nl/en/" target="_blank">homecomputermuseum.nl</a>
+      </div>
+    </div>
+
+    <div class="info-card teal" style="color:var(--deep)">
+      <h3>🎮 Bonami Spelcomputer Museum, Zwolle ⭐</h3>
+      <div class="meta-pills">
+        <span>📍 1t 15min tog fra Amsterdam</span>
+        <span>📅 D5 dagstur</span>
+        <span>💰 €18,50/person (gratis 0-4 år)</span>
+        <span>⏱️ 3-4 timer</span>
+      </div>
+      <p>
+        Nederlands største retrogaming-samling: 3 250 m² fri lek, 10 000+ spillbare spill, pinball-haller,
+        full arcade-avdeling. Du kan SPILLE alt — ikke bare se på.
+        Magisk for 5-8 år (Alana titter og trykker, Lukas spiller).
+      </p>
+      <div class="links-row">
+        <a href="https://computermuseum.nl/" target="_blank">computermuseum.nl</a>
+      </div>
+    </div>
+
+    <div class="info-card teal" style="color:var(--deep)">
+      <h3>👾 Blast Galaxy Amsterdam</h3>
+      <div class="meta-pills">
+        <span>📍 Amsterdam Noord</span>
+        <span>📅 D2 kveld</span>
+        <span>💰 €12,50-15 ubegrenset</span>
+        <span>⏱️ 1,5-2 timer</span>
+      </div>
+      <p>
+        120+ retro-arkademaskiner — Donkey Kong, Pac-Man, Mario, Galaga, Street Fighter.
+        Flat fee, ingen mynter. Mat og drikke tilgjengelig.
+        Perfekt kveldsaktivitet etter en lett dag i Amsterdam.
+      </p>
+      <div class="links-row">
+        <a href="https://www.blastgalaxy.nl/" target="_blank">blastgalaxy.nl</a>
+      </div>
+    </div>
+
+    <div class="info-card teal" style="color:var(--deep)">
+      <h3>💡 Philips Museum, Eindhoven</h3>
+      <div class="meta-pills">
+        <span>📍 30 min fra Kaatsheuvel</span>
+        <span>📅 D13 ettermiddag</span>
+        <span>💰 ~€15 voksen</span>
+        <span>⏱️ 1,5-2 timer</span>
+      </div>
+      <p>
+        Industri-, design- og innovasjonshistorie fra 1891 til i dag — fra glødelamper til medisinsk tech.
+        Interaktive utstillinger. Kombineres naturlig med HomeComputerMuseum samme dag.
+      </p>
+      <div class="links-row">
+        <a href="https://www.philips.com/a-w/philips-museum.html" target="_blank">philips.com/a-w/philips-museum</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ATTRAKSJONER-DYP-DYKK -->
+  <section data-background-color="#1B4965">
+    <h2 style="color:#FFD93D">🎢 Hovedattraksjoner — dyp-dykk</h2>
+
+    <div class="info-card gold" style="color:var(--deep)">
+      <h3>🎢 Efteling Kaatsheuvel</h3>
+      <div class="meta-pills">
+        <span>📍 Kaatsheuvel, Noord-Brabant</span>
+        <span>📅 D11 heldag</span>
+        <span>💰 €40-56/pers (dynamisk)</span>
+        <span>⏱️ 6-8 timer</span>
+      </div>
+      <p>
+        Nederlands største eventyrpark og en av Europas beste familieparker.
+        <strong>For Alana (5):</strong> Eventyrskogen, Carnaval Festival, Droomvlucht (magisk lufttur).
+        <strong>For Lukas (8):</strong> Joris en de Draak (vannseilebane med kappløp!), Python (klassisk berg-og-dal), Vogel Rok.
+      </p>
+      <p style="font-size:0.6em"><strong>Tips:</strong> Ankomst 10:00 før kø. Kjøp online (rabatt). Pakk niste — parkmat er dyrt.</p>
+      <div class="links-row">
+        <a href="https://www.efteling.com/" target="_blank">efteling.com</a>
+        <a href="https://www.efteling.com/en/park/tickets" target="_blank">Billett</a>
+      </div>
+    </div>
+
+    <div class="info-card gold" style="color:var(--deep)">
+      <h3>🏛️ NEMO Science Museum</h3>
+      <div class="meta-pills">
+        <span>📍 Oosterdok 2, Amsterdam</span>
+        <span>📅 D3 heldag</span>
+        <span>💰 ~€21,50/person</span>
+        <span>⏱️ 3-4 timer</span>
+      </div>
+      <p>
+        5 etasjer med interaktive vitenskaps-utstillinger: kjemilab, store såpebobler, magnetisme, lyd-lab, og en tak-terrasse
+        med utsikt over Amstel. Roy får tech-glede, barna lærer leke. Bygd som et grønt skip ved havna.
+      </p>
+      <p style="font-size:0.6em"><strong>Tips:</strong> Book online med tidsspesifikk inngang. Best tid: etter 14:00 (mindre folksomt).</p>
+      <div class="links-row">
+        <a href="https://www.nemosciencemuseum.nl/en/" target="_blank">nemosciencemuseum.nl</a>
+      </div>
+    </div>
+
+    <div class="info-card gold" style="color:var(--deep)">
+      <h3>🏰 Madurodam</h3>
+      <div class="meta-pills">
+        <span>📍 George Maduroplein 1, Den Haag</span>
+        <span>📅 D7 heldag</span>
+        <span>💰 ~€22,50/person (alle aldre likt)</span>
+        <span>⏱️ 3-4 timer</span>
+      </div>
+      <p>
+        Mini-Nederland i 1:25 skala — 50 000+ små mennesker, tog som faktisk kjører, små båter på kanaler.
+        Interaktiv del der Lukas kan styre Schiphol-flyplass i miniatyr.
+        Fascinerende for både voksne og barn.
+      </p>
+      <div class="links-row">
+        <a href="https://www.madurodam.nl/en/" target="_blank">madurodam.nl</a>
+      </div>
+    </div>
+
+    <div class="info-card gold" style="color:var(--deep)">
+      <h3>🌬️ Kinderdijk windmills (UNESCO)</h3>
+      <div class="meta-pills">
+        <span>📍 25 km fra Rotterdam</span>
+        <span>📅 D9 dagstur</span>
+        <span>💰 €7,50/€4,50 (familje €25)</span>
+        <span>⏱️ 1,5-2 timer</span>
+      </div>
+      <p>
+        19 historiske møller fra 1740. UNESCO-verdensarv. Sykkel eller båt rundt området.
+        Inne i én av møllene kan dere se mekanismen som drenerte polderne.
+      </p>
+      <p style="font-size:0.6em"><strong>Fra Den Haag:</strong> Tog til Rotterdam (20 min) + Waterbus 20 (30 min).</p>
+      <div class="links-row">
+        <a href="https://kinderdijk.nl/en/" target="_blank">kinderdijk.nl</a>
+        <a href="https://www.waterbus.nl/" target="_blank">Waterbus</a>
+      </div>
+    </div>
+  </section>
+
   <!-- BUDSJETT -->
   <section>
     <h2>💰 Budsjett — estimat</h2>
     <table class="budget-table">
       <tr><td>Fly OSL ⇄ AMS (4 pers, bestilt 5 mnd før)</td><td>12 000 kr</td></tr>
-      <tr><td>Overnatting Amsterdam (4 netter, familjehotell)</td><td>5 600 kr</td></tr>
-      <tr><td>Overnatting Den Haag (4 netter, familjehotell)</td><td>4 400 kr</td></tr>
-      <tr><td>Center Parcs Kaatsheuvel (5 netter, bungalow)</td><td>6 500 kr</td></tr>
+      <tr><td>Amsterdam normal hotell (4 netter, familjerom)</td><td>5 600 kr</td></tr>
+      <tr><td>The Arcade Hotel (1 natt familjerom) ⭐</td><td>1 800 kr</td></tr>
+      <tr><td>Den Haag familjehotell (4 netter)</td><td>4 400 kr</td></tr>
+      <tr><td>Marvilla Parks Kaatsheuvel (4 netter, bungalow)</td><td>5 600 kr</td></tr>
       <tr><td>Mat — matlaging selv 60% (800 kr/dag × 14)</td><td>11 200 kr</td></tr>
       <tr><td>Restaurant + pannekake-hus (4 × 1 000 kr)</td><td>4 000 kr</td></tr>
-      <tr><td>Leiebil Kaatsheuvel-etappen (6 dager)</td><td>3 500 kr</td></tr>
-      <tr><td>OV-chipkaart + tog + sykkelutleie</td><td>2 500 kr</td></tr>
-      <tr><td>Efteling (familie, 1,5 dager)</td><td>2 800 kr</td></tr>
-      <tr><td>NEMO + Artis + Madurodam + Kinderdijk + Helmond</td><td>3 600 kr</td></tr>
+      <tr><td>Leiebil Kaatsheuvel-etappen (5 dager)</td><td>3 000 kr</td></tr>
+      <tr><td>OV-chipkaart + tog Bonami/Kinderdijk + sykkelutleie</td><td>3 000 kr</td></tr>
+      <tr><td>Efteling (familie)</td><td>1 800 kr</td></tr>
+      <tr><td>NEMO + Artis + Madurodam + Kinderdijk</td><td>3 200 kr</td></tr>
+      <tr><td>Bonami + HomeComputerMuseum + Philips + Blast Galaxy</td><td>1 800 kr</td></tr>
       <tr><td>Parkering OSL + reiseforsikring</td><td>1 800 kr</td></tr>
-      <tr><td>Buffer / uforutsett</td><td>2 100 kr</td></tr>
-      <tr class="total"><td>TOTAL</td><td>50 000 kr ⚠</td></tr>
+      <tr><td>Buffer / uforutsett</td><td>2 800 kr</td></tr>
+      <tr class="total"><td>TOTAL</td><td>~52 000 kr ⚠</td></tr>
     </table>
     <p style="font-size:0.6em; margin-top:15px; color:#666">
-      ⚠ Over budsjettrammen (35-40k). Dette er <strong>premium-alternativet</strong> — utlandet koster mer.<br>
-      <strong>Spare-tips:</strong> Bestill fly i januar 2026 (kan bli 8 000 kr), skip Center Parcs (camping/budget-hotell -3 000),
-      lag mer egen mat (-2 000). Justert: <strong>~42 000 kr</strong>.<br>
-      <strong>Drive-alternativ:</strong> Ferge KRS-Hirtshals + 2 overnattinger underveis hver vei = sparer ~3-4 000 kr,
-      men bruker 4 dager av ferien på reise.
+      ⚠ Premium-alternativ. Inkluderer alle retro-stopp + The Arcade Hotel.<br>
+      <strong>Spare-tips:</strong> Skip Philips Museum (–800), bestill fly i januar (~4 000 sparing),
+      mer egen mat (–2 000). Justert: <strong>~45 000 kr</strong>.
     </p>
   </section>
 
-  <!-- FORDELER / ULEMPER -->
+  <!-- PROS / CONS -->
   <section>
     <h2>📊 Pros & Cons</h2>
     <div class="pros-cons">
@@ -76,22 +357,22 @@
         <h3>✅ Fordeler</h3>
         <ul>
           <li>Helt nytt land — utenlands-eventyr!</li>
-          <li>3 base-camps med 4-5 netter hver</li>
-          <li>Hvile-dag etter NEMO, Madurodam, Efteling, Helmond</li>
-          <li>Efteling — Europas beste eventyrpark for barn 5-8</li>
+          <li><strong>The Arcade Hotel</strong> — magisk gaming-natt</li>
+          <li>Alle Roys retro-drømmer i én tur</li>
+          <li>4 base-camps med 4-5 netter hver</li>
+          <li>4 hvile-dager etter store aktiviteter</li>
+          <li>Efteling — Europas beste familiepark for 5-8</li>
           <li>NEMO — Roy får tech, barna lærer leke</li>
-          <li>Center Parcs basseng = vannland gratis</li>
           <li>Sykkelby Amsterdam — magisk med barn</li>
-          <li>Bonus: HomeComputerMuseum (retro-paradis)</li>
         </ul>
       </div>
       <div class="col cons">
         <h3>⚠ Ulemper</h3>
         <ul>
-          <li>Premiumalternativ — ~50 000 kr</li>
-          <li>2 reisedager (D1 + D14) går til logistikk</li>
+          <li>Premium-alternativ — ~52 000 kr</li>
+          <li>2 reisedager (D1 + D14) til logistikk</li>
           <li>Fly med 5-åring krever planlegging</li>
-          <li>Amsterdam kan være varmt og fullt i august</li>
+          <li>D3 bytte hotell (Arcade ↔ normal) gir 2 inn/utsjekk</li>
           <li>Bagasje-begrensninger på fly</li>
           <li>Ingen norsk natur</li>
           <li>Krever pass + EU-helsekort</li>
@@ -100,42 +381,96 @@
     </div>
   </section>
 
-  <!-- TECH-NEXUS -->
-  <section data-background-color="#1e3a5f">
-    <h2 style="color:white">🧪 Tech / retro-bonus — best av alle alternativene!</h2>
-    <div style="text-align:left; max-width:950px; margin:0 auto; color:white; font-size:0.75em">
-      <h3 style="color:#FFD93D">På programmet:</h3>
-      <ul style="line-height:1.6">
-        <li><strong>NEMO Science Museum Amsterdam (dag 3):</strong> 6 etasjer interaktiv vitenskap — kjemilab, musikklab, store såpebobler. Roy får tech-glede, barna lærer leke.</li>
-        <li><strong>HomeComputerMuseum Helmond (dag 12):</strong> ⭐ Komplett time-travel gjennom 80/90-talls hjemmedatorer (Commodore 64, Atari, Amiga, Apple). Arcade-kafé med spillbare maskiner. Reparasjonsverksted. Perfekt for både Roy og 8-årige Lukas.</li>
-      </ul>
-      <h3 style="color:#FFD93D; margin-top:25px">Bonus om dere strekker dere:</h3>
-      <ul style="line-height:1.6">
-        <li><strong>Bonami Spelcomputer Museum, Zwolle:</strong> 10 000+ spillbare retrospill, arcade-haller, pinball. ~1t 20min tog fra Amsterdam. Helt unik. Alternativ til Helmond hvis dere vil ha mer "spillbart".</li>
-        <li><strong>Blast Galaxy Amsterdam:</strong> Retro-arkade med flat fee, ingen mynter. Donkey Kong, Pac-Man, Mario. En kveldsaktivitet.</li>
-        <li><strong>Philips Museum Eindhoven:</strong> Tirsdag 15:30 har gratis inngang. Philips-innovasjonshistorie.</li>
-      </ul>
-      <h3 style="color:#FFD93D; margin-top:25px">Drøm-detour (krever ekstra dag):</h3>
-      <ul style="line-height:1.6">
-        <li><strong>The Arcade Hotel Amsterdam:</strong> Gaming-tematisert overnatting med NES/SNES/Sega-konsoller på rommet. Bytt ut én Amsterdam-natt for magisk barneopplevelse.</li>
-      </ul>
-    </div>
-  </section>
-
   <!-- OVERNATTING -->
   <section>
-    <h2>🏨 Overnatting — 3 base-camps</h2>
+    <h2>🏨 Overnatting — 4 base-camps</h2>
     <table class="budget-table" style="font-size:0.65em">
-      <tr><td><strong>Dag 1-4</strong></td><td>Amsterdam familjehotell (4 netter) — Oud-West eller forsteder med tog til sentrum</td></tr>
-      <tr><td><strong>Dag 5-8</strong></td><td>Den Haag familjehotell (4 netter) — gå/buss til Scheveningen + Madurodam</td></tr>
-      <tr><td><strong>Dag 9-13</strong></td><td>Center Parcs Kaatsheuvel (5 netter) — bungalow med basseng-tilgang, kort fra Efteling</td></tr>
+      <tr><td><strong>Dag 1-2, 4-5</strong></td><td>Amsterdam familjehotell (4 netter) — Oud-West eller forsteder</td></tr>
+      <tr><td><strong>Dag 3</strong> ⭐</td><td><a href="https://www.arcadehotel.nl/" target="_blank" style="color:var(--coral-deep); font-weight:600">The Arcade Hotel</a> (1 natt — gaming-rom!)</td></tr>
+      <tr><td><strong>Dag 6-9</strong></td><td>Den Haag familjehotell (4 netter)</td></tr>
+      <tr><td><strong>Dag 10-13</strong></td><td><a href="https://marvillaparks.nl/" target="_blank" style="color:var(--coral-deep); font-weight:600">Marvilla Parks Kaatsheuvel</a> (4 netter, bungalow ved Efteling)</td></tr>
       <tr><td><strong>Dag 14</strong></td><td>Hjem 🏡</td></tr>
     </table>
     <p style="font-size:0.55em; margin-top:15px; color:#666">
-      📌 Center Parcs/Landal er populært blant nederlandske familier — book senest mars/april 2026 for sommerukene.<br>
-      📌 Unngå Airbnb i Amsterdam sentrum — nye restriksjoner fra 2026 (max 15 dager/år i mange områder).<br>
-      📌 Alternativ: 1 natt på <strong>The Arcade Hotel</strong> i Amsterdam — gaming-tematisert overnatting.
+      📌 Bestill alle hoteller senest mai 2026 — uke 31-32 er Nederlandske skoleferie-uker.<br>
+      📌 The Arcade Hotel bør bestilles direkte for å sikre konsoll-rom (ikke via Booking).<br>
+      📌 Marvilla Parks ligger 3 km fra Efteling-inngang.
     </p>
+  </section>
+
+  <!-- LENKER OG FORDYPNING -->
+  <section>
+    <h2>🔗 Lenker & fordypning</h2>
+    <div class="links-grid">
+
+      <div class="link-cell">
+        <strong>🛫 Reise</strong>
+        <a href="https://www.flysas.com/no/" target="_blank">SAS booking</a><br>
+        <a href="https://www.klm.com/no/no" target="_blank">KLM booking</a><br>
+        <a href="https://www.schiphol.nl/en/" target="_blank">Schiphol info</a><br>
+        <a href="https://www.helsenorge.no/en/health-rights-tourist-abroad/the-european-health-insurance-card/" target="_blank">EU-helsekort</a>
+      </div>
+
+      <div class="link-cell">
+        <strong>🏨 Overnatting</strong>
+        <a href="https://www.arcadehotel.nl/" target="_blank">⭐ The Arcade Hotel</a><br>
+        <a href="https://marvillaparks.nl/en/parks/kaatsheuvel/" target="_blank">Marvilla Parks Kaatsheuvel</a><br>
+        <a href="https://www.landal.com/" target="_blank">Landal GreenParks</a><br>
+        <a href="https://www.booking.com/" target="_blank">Booking.com</a>
+      </div>
+
+      <div class="link-cell">
+        <strong>🕹️ Retro / tech</strong>
+        <a href="https://www.homecomputermuseum.nl/en/" target="_blank">⭐ HomeComputerMuseum Helmond</a><br>
+        <a href="https://computermuseum.nl/" target="_blank">⭐ Bonami Spelcomputer Museum Zwolle</a><br>
+        <a href="https://www.blastgalaxy.nl/" target="_blank">Blast Galaxy Amsterdam</a><br>
+        <a href="https://www.philips.com/a-w/philips-museum.html" target="_blank">Philips Museum Eindhoven</a><br>
+        <a href="https://www.tontonclub.nl/en/home/" target="_blank">TonTon Club (arcade+mat)</a>
+      </div>
+
+      <div class="link-cell">
+        <strong>🎢 Familieattraksjoner</strong>
+        <a href="https://www.efteling.com/" target="_blank">⭐ Efteling Kaatsheuvel</a><br>
+        <a href="https://www.nemosciencemuseum.nl/en/" target="_blank">NEMO Science Museum</a><br>
+        <a href="https://www.madurodam.nl/en/" target="_blank">Madurodam Den Haag</a><br>
+        <a href="https://www.artis.nl/en/" target="_blank">Artis Royal Zoo</a><br>
+        <a href="https://kinderdijk.nl/en/" target="_blank">Kinderdijk møller</a>
+      </div>
+
+      <div class="link-cell">
+        <strong>🌷 Amsterdam</strong>
+        <a href="https://www.iamsterdam.com/en" target="_blank">I Amsterdam (turistinfo)</a><br>
+        <a href="https://www.iamsterdam.com/en/see-and-do/things-to-do/parks-and-natural-spaces/vondelpark" target="_blank">Vondelpark</a><br>
+        <a href="https://en.wikipedia.org/wiki/Bloemenmarkt" target="_blank">Bloemenmarkt</a><br>
+        <a href="https://black-bikes.com/" target="_blank">Black Bikes (sykkelutleie)</a><br>
+        <a href="https://www.annefrank.org/en/" target="_blank">Anne Frank Huset (valgfri)</a>
+      </div>
+
+      <div class="link-cell">
+        <strong>⛱️ Den Haag</strong>
+        <a href="https://denhaag.com/en" target="_blank">Den Haag turistinfo</a><br>
+        <a href="https://scheveningen.com/en/" target="_blank">Scheveningen</a><br>
+        <a href="https://www.visitsealife.com/scheveningen/" target="_blank">SEA LIFE Scheveningen</a><br>
+        <a href="https://www.mauritshuis.nl/en/" target="_blank">Mauritshuis (kunst)</a>
+      </div>
+
+      <div class="link-cell">
+        <strong>🚆 Transport i NL</strong>
+        <a href="https://www.ns.nl/en" target="_blank">NS — tog</a><br>
+        <a href="https://www.ov-chipkaart.nl/" target="_blank">OV-chipkaart</a><br>
+        <a href="https://www.waterbus.nl/" target="_blank">Waterbus (Kinderdijk)</a><br>
+        <a href="https://www.iamsterdam.com/en/travel-stay/getting-around/park-and-ride" target="_blank">Park & Ride Amsterdam</a>
+      </div>
+
+      <div class="link-cell">
+        <strong>📚 Blogger & guides</strong>
+        <a href="https://dutchreview.com/culture/arcades-netherlands-gaming-amsterdam/" target="_blank">Arcades i Nederland</a><br>
+        <a href="https://www.saltinourhair.com/netherlands/" target="_blank">Salt in our Hair — NL-guide</a><br>
+        <a href="https://kinderdijk.com/visit-kinderdijk-with-kids" target="_blank">Kinderdijk med barn</a><br>
+        <a href="https://www.tripadvisor.com/Tourism-g188590-Amsterdam_North_Holland_Province-Vacations.html" target="_blank">TripAdvisor Amsterdam</a>
+      </div>
+
+    </div>
   </section>
 
   <!-- PRAKTISK -->
@@ -144,26 +479,23 @@
     <div style="text-align:left; max-width:950px; margin:0 auto; font-size:0.7em">
       <h3 style="color:#E85555">Reise og logistikk</h3>
       <ul>
-        <li><strong>Bestill fly tidlig:</strong> SAS/KLM direkte OSL→AMS billigst i januar/februar 2026. Ventes på pris-spike i april.</li>
-        <li><strong>Parkering OSL:</strong> Long-term parkering ~150 kr/dag → ~2 100 kr for 14 dager. Bestill i forveien.</li>
+        <li><strong>Bestill fly tidlig:</strong> SAS/KLM direkte OSL→AMS billigst i januar/februar 2026.</li>
+        <li><strong>The Arcade Hotel — bestill direkte:</strong> Velg "Family room" og spesifiser konsoll-tema. Booking.com viser ikke alle rom-typer.</li>
         <li><strong>Pass + EU-helsekort:</strong> Sjekk gyldighet for alle 4 senest 2 mnd før.</li>
-        <li><strong>Bagasje:</strong> KLM/SAS innsjekket bag 23kg/person. Med 4 pers = 92kg. Bør holde for 14 dager.</li>
       </ul>
 
-      <h3 style="color:#E85555; margin-top:25px">I Amsterdam og Den Haag</h3>
+      <h3 style="color:#E85555; margin-top:20px">Sykkel i Amsterdam</h3>
       <ul>
-        <li><strong>OV-chipkaart:</strong> Engangs ~€7,50 + lad opp. Tog/buss/sporvogn over hele Nederland. Familjerabatt 40% off-peak.</li>
-        <li><strong>Sykkelutleie:</strong> Black Bikes / MacBike — €19/dag for voksen-sykkel med barnesete (5-åring). 8-åring egen sykkel: €15/dag.</li>
-        <li><strong>Ikke parker i Amsterdam:</strong> €20-50/dag, miljøsone. Bruk P+R (Park & Ride) hvis dere har bil.</li>
+        <li><strong>Sykkelutleie:</strong> Black Bikes / MacBike — €19/dag for voksen-sykkel med barnesete (Alana). Egen barnesykkel for Lukas: €15/dag.</li>
+        <li><strong>Ikke parker i Amsterdam:</strong> €20-50/dag, miljøsone. Bruk P+R hvis dere har bil.</li>
       </ul>
 
-      <h3 style="color:#E85555; margin-top:25px">Efteling-tips</h3>
+      <h3 style="color:#E85555; margin-top:20px">Efteling-tips</h3>
       <ul>
         <li><strong>Kjøp billett online</strong> — sparer 5-10 € per billett.</li>
         <li><strong>Eventyrskogen</strong> er perfekt for begge barn — magisk, ikke skummelt.</li>
-        <li><strong>Småbarn-ride</strong> for 5-åringen: Carnaval Festival, Droomvlucht, Pirat ride.</li>
-        <li><strong>8-åringen</strong> kan ta de fleste mellomstore: Python, Joris en de Draak (trekkebanen!).</li>
-        <li><strong>Mat i parken er dyrt</strong> — pakk niste, finn picknic-områder.</li>
+        <li><strong>Småbarn-ride</strong> for Alana: Carnaval Festival, Droomvlucht, Pirat-ride.</li>
+        <li><strong>Lukas</strong> kan ta de fleste mellomstore: Joris en de Draak (trekkebanen!), Python.</li>
       </ul>
     </div>
   </section>
@@ -187,7 +519,7 @@
       <div>
         <h3 style="color:#E85555">Park-dager + strand</h3>
         <ul style="list-style:none; padding:0">
-          <li>🩲 Badetøy + håndkle (Center Parcs basseng)</li>
+          <li>🩲 Badetøy + håndkle (Marvilla basseng)</li>
           <li>🧴 Solkrem SPF 50+ for barn</li>
           <li>🧢 Solhatt for begge barn</li>
           <li>🎒 Sekk for dagsturer</li>
@@ -200,8 +532,8 @@
   </section>
 
   <!-- AVSLUTNING -->
-  <section data-background-color="#1e3a5f">
-    <h1 style="color:#FFD93D">Tot ziens! 🌷</h1>
+  <section data-background-color="#1B4965">
+    <h1 style="color:#FFD93D">Tot ziens! 🌷🕹️</h1>
     <p style="color:white; font-size:1.2em">Alternativ D — Amsterdam / Nederland</p>
     <p style="color:white; opacity:0.85">
       <a href="index.html" style="color:#FFD93D">← Tilbake til oversikt</a>
@@ -222,15 +554,15 @@ const DAY_IMAGES_D = {
   2: "https://upload.wikimedia.org/wikipedia/commons/3/3b/Amsterdam%2C_Vondelpark%2C_at_the_pond-2.jpg",
   3: "https://upload.wikimedia.org/wikipedia/commons/6/6a/Armsterdam_-_panoramio.jpg",
   4: "https://upload.wikimedia.org/wikipedia/commons/8/85/ArtisIngang.jpg",
-  5: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Den_Haag_Skyline_1.jpg/1280px-Den_Haag_Skyline_1.jpg",
-  6: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Madurodam_main_entrance.jpg",
-  7: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Den_Haag_Scheveningen_Pier_32.jpg/1280px-Den_Haag_Scheveningen_Pier_32.jpg",
-  8: "https://upload.wikimedia.org/wikipedia/commons/f/ff/KinderdijkMolens02.jpg",
-  9: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Langstraat_-_Kaatsheuvel_-_Meester_Schoenmaker_Monument3.jpg",
-  10: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Efteling_The_House_of_the_Five_Senses.jpg/1280px-Efteling_The_House_of_the_Five_Senses.jpg",
-  11: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Langstraat_-_Kaatsheuvel_-_Meester_Schoenmaker_Monument3.jpg",
-  12: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Voorkant_homecomputermuseum.jpg/1280px-Voorkant_homecomputermuseum.jpg",
-  13: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Efteling_The_House_of_the_Five_Senses.jpg/1280px-Efteling_The_House_of_the_Five_Senses.jpg",
+  5: "https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png",
+  6: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/Den_Haag_Skyline_1.jpg/1280px-Den_Haag_Skyline_1.jpg",
+  7: "https://upload.wikimedia.org/wikipedia/commons/b/bf/Madurodam_main_entrance.jpg",
+  8: "https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/Den_Haag_Scheveningen_Pier_32.jpg/1280px-Den_Haag_Scheveningen_Pier_32.jpg",
+  9: "https://upload.wikimedia.org/wikipedia/commons/f/ff/KinderdijkMolens02.jpg",
+  10: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Langstraat_-_Kaatsheuvel_-_Meester_Schoenmaker_Monument3.jpg",
+  11: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Efteling_The_House_of_the_Five_Senses.jpg/1280px-Efteling_The_House_of_the_Five_Senses.jpg",
+  12: "https://upload.wikimedia.org/wikipedia/commons/6/6d/Langstraat_-_Kaatsheuvel_-_Meester_Schoenmaker_Monument3.jpg",
+  13: "https://upload.wikimedia.org/wikipedia/commons/thumb/7/79/Voorkant_homecomputermuseum.jpg/1280px-Voorkant_homecomputermuseum.jpg",
   14: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg/1280px-Norway_Aust-Agder_Tvedestrand_Pier_2000.jpg"
 };
 const FALLBACK_IMG = "https://upload.wikimedia.org/wikipedia/commons/5/57/Imagen_de_los_canales_conc%C3%A9ntricos_en_%C3%81msterdam.png";
@@ -241,6 +573,12 @@ const parent = anchor.parentElement;
 
 route.days.forEach(d => {
   const img = DAY_IMAGES_D[d.day] || FALLBACK_IMG;
+  let linksHtml = '';
+  if (d.links && d.links.length) {
+    linksHtml = '<div class="links">' +
+      d.links.map(l => `<a href="${l.url}" target="_blank" rel="noopener">${l.label} ↗</a>`).join('') +
+      '</div>';
+  }
   const slide = document.createElement('section');
   slide.innerHTML = `
     <div class="day-slide">
@@ -253,6 +591,7 @@ route.days.forEach(d => {
           <div class="meta">🚗 <strong>Reisetid:</strong> ${d.drive}</div>
           <div class="meta">🏨 <strong>Overnatting:</strong> ${d.lodging}</div>
         </div>
+        ${linksHtml}
       </div>
     </div>
   `;
